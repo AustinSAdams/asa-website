@@ -10,7 +10,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #d99f00d9;
   }
 }
 
@@ -24,4 +24,40 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+/* CSS styling for header */
+.header{
+  background-color: #d99f00d9;
+  padding: 24px;
+  color: #0a0a0a;
+  text-transform: uppercase;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.header .nav-container{
+  text-align: right;
+  margin-left: auto;
+  padding-right: 20px;
+  display: flex;
+  gap: 10px;
+}
+.header .home-button{
+  text-align: left;
+  margin-right: auto;
+  padding-left: 20px;
+  font-size: 36px;
+}
+.header .nav-button{
+  padding: 10px 15px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.header .nav-button:hover{
+  background-color: #775701d9;
 }
