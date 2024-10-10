@@ -1,14 +1,11 @@
+/* Home Page Creation */
+import Image from 'next/image';
+import pageContent from '../public/pageContent.json';
 
 export default function Home() {
   return (
-    <div>
-      <header
-        style={{
-          fontSize: '50px',
-          textAlign: 'center',
-          textTransform: 'uppercase'
-        }}
-      >Welcome!</header>
+    <div className="home">
+      home
     </div>
   );
 }

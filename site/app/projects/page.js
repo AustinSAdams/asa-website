@@ -1,6 +1,6 @@
 
 export default function Page(){
     return (
-        <p>Programs me page!</p>
+        <p>Programs/Projects page!</p>
     );
 }
