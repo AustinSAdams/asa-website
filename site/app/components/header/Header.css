@@ -1,0 +1,41 @@
+
+.header{
+    background-color: #d99f00d9;
+    padding: 15px;
+    color: #0a0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-color: #0a0a0a;
+    border-width: 2px;
+}
+  
+.header-name {
+    font-size: 200%;
+    font-family: "OCR A Std", monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 2%;
+}
+  
+.social-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: auto;
+    padding-right: 2%;
+}
+  
+.social-icon {
+    color: #0a0a0a;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+  
+.social-icon:hover {
+    border-width: 2px;
+    border-color: #0a0a0a;
+    padding: 2px;
+    border-radius: 35%;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.623);
+}
