@@ -1,4 +1,60 @@
-.home {
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        opacity: 1; /* End fully visible */
+    }
+}
+
+.homepage-container {
     display: flex;
-    color: #a88900;
+    flex-direction: column;
+    background: radial-gradient(circle, #000000 30%, #646464 100%);
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: OCR A Std, monospace;
+}
+
+.homepage-welcome {
+    color: #000000;
+    font-size: 15vw;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    text-shadow: 0 0 10px #d99f00d9, 0 0 20px #d99f00d9, 0 0 30px #d99f00d9, 0 0 40px #d99f00d9;
+}
+
+.homepage-description {
+    display: flex;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+    animation: fadeIn 2s forwards;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    width: 100%;
+}
+
+.description-text {
+    font-size: 2.2vw;
+    font-style: italic;
+    word-wrap: break-word;
+    max-width: 100%;
+    text-align: center;
+}
+
+.homepage-button {
+    border: 1px solid #d99f00d9;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    animation: fadeIn 4s forwards;
+}
+
+.homepage-button:hover {
+    background-color: #242424;
 }

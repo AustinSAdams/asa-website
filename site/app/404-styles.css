@@ -1,0 +1,44 @@
+/* CSS Styling for 404 page */
+
+.container-404 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #484848;
+    margin: 2%;
+    border-radius: 5px;
+    height: 100vh;
+}
+
+.errorCode {
+    font-size: 8rem;
+    color: #D80000;
+    margin: 0;
+}
+
+.errorMessage {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.homeButton-404 {
+    padding: 10px 15px;
+    font-size: 20px;
+    color: #000000;
+    background-color: #c40000;
+    border: none;
+    margin-top: 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.homeButton-404:hover {
+    background-color: #890000;
+    border: solid;
+    border-width: 2px;
+    border-color: #000000;
+}
