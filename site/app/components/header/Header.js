@@ -21,6 +21,7 @@ export default function Header(){
             <div className="social-container">
                 {socials.map((item, index) => (
                     <button
+                        key={index}
                         onClick={()=>{router.push(item.href)}}
                     >{item.icon}</button>
                 ))}
