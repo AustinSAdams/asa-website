@@ -8,7 +8,7 @@ export default function Footer(){
     const router = useRouter();
 
     const navButtons = [
-        { label: 'Home', href: './', icon: <House className="nav-icon"/> },
+        { label: 'Home', href: './explore', icon: <House className="nav-icon"/> },
         { label: 'About Me', href: './about', icon: <PersonStanding className="nav-icon"/> },
         { label: 'Projects', href: './projects', icon: <FileCode className="nav-icon"/> },
         { label: 'Contact Me', href: './contact', icon: <Contact className="nav-icon"/> },
@@ -19,6 +19,7 @@ export default function Footer(){
             <span className='nav-container'>
                 {navButtons.map((item) => (
                     <button
+                        ket={item.label}
                         className='nav-button'
                         onClick={()=>{router.push(item.href)}}
                     >

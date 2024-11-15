@@ -1,0 +1,48 @@
+.explore-page {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 20px;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    min-width: 200px;
+    min-height: 200px;
+    padding: 16px;
+    border: 1px solid #d99f00d9;
+    border-radius: 8px;
+    background-color: #3d3d3d;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-family: Courier, monospace;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background-color: #202020;
+}
+
+.card-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.card-name {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.card-description {
+    font-size: 0.9rem;
+    margin-top: 4px;
+    color: #ffffff;
+    text-align: center;
+}
