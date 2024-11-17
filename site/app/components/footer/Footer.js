@@ -19,7 +19,7 @@ export default function Footer(){
             <span className='nav-container'>
                 {navButtons.map((item) => (
                     <button
-                        ket={item.label}
+                        key={item.label}
                         className='nav-button'
                         onClick={()=>{router.push(item.href)}}
                     >
