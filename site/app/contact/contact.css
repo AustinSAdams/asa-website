@@ -2,10 +2,23 @@
     display: flex;
     flex-direction: column;
     padding: 15px;
+    gap: 8px;
 }
 
 .contact-form {
     background-color: #3d3d3d;
     padding: 20px;
     border-radius: 5px;
+}
+
+.info-container {
+    background-color: #3d3d3d;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.info-container p {
+    margin: 5px 0 5px 0;
+    text-align: center;
+    font-style: italic;
 }

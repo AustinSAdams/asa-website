@@ -35,8 +35,7 @@ export default function ContactForm() {
     return (
         <div>
             <form onSubmit={handleSubmit} className="formContainer">
-                <div>
-                    <label htmlFor="name" className="form-label">Name</label>
+                <div className="form-group">
                     <input
                         type="text"
                         id="name"
@@ -44,11 +43,12 @@ export default function ContactForm() {
                         onChange={(e) => setName(e.target.value)}
                         required
                         className="form-inputField"
+                        placeholder=" " /* Trigger for floating label */
                     />
+                    <label htmlFor="name" className="form-label">Name</label>
                 </div>
 
-                <div>
-                    <label htmlFor="email" className="form-label">Email</label>
+                <div className="form-group">
                     <input
                         type="email"
                         id="email"
@@ -56,11 +56,12 @@ export default function ContactForm() {
                         onChange={(e) => setEmail(e.target.value)}
                         required
                         className="form-inputField"
+                        placeholder=" "
                     />
+                    <label htmlFor="email" className="form-label">Email</label>
                 </div>
 
-                <div>
-                    <label htmlFor="message" className="form-label">Message</label>
+                <div className="form-group">
                     <textarea
                         id="message"
                         value={message}
@@ -68,7 +69,9 @@ export default function ContactForm() {
                         required
                         rows="4"
                         className="form-textareaField"
+                        placeholder=" "
                     />
+                    <label htmlFor="message" className="form-label">Message</label>
                 </div>
 
                 <button

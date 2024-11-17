@@ -2,14 +2,14 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyD_IohVRU8L1ZCSopp0P-M_MWR5qcw1Q_A",
-    authDomain: "portfolio-site-62bc0.firebaseapp.com",
-    databaseURL: "https://portfolio-site-62bc0-default-rtdb.firebaseio.com",
-    projectId: "portfolio-site-62bc0",
-    storageBucket: "portfolio-site-62bc0.firebasestorage.app",
-    messagingSenderId: "104045295607",
-    appId: "1:104045295607:web:19a808eccb760a4a2660f2",  
-    measurementId: "G-8YSYJ5366Q"
+    apiKey: `${process.env.NEXT_PUBLIC_FIREBASE_API_KEY}`,
+    authDomain: `${process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN}`,
+    databaseURL: `${process.env.NEXT_PUBLIC_FIREBASE_DB_URL}`,
+    projectId: `${process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID}`,
+    storageBucket: `${process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET}`,
+    messagingSenderId: `${process.env.NEXT_PUBLIC_FIREBASE_SENDER_ID}`,
+    appId: `${process.env.NEXT_PUBLIC_FIREBASE_APP_ID}`,  
+    measurementId: `${process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID}`
 };
   
 const app = initializeApp(firebaseConfig);
