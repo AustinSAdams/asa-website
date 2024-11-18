@@ -3,13 +3,14 @@
     flex-direction: column;
     background-color: #000000;
     color: white;
+    margin-bottom: 60px;
 }
 
 .content-container {
     display: flex;
-    background-color: #2b2b2b;
-    align-content: center;
+    flex-wrap: wrap;
     justify-content: center;
+    background-color: #2b2b2b;
     padding: 15px 20px;
     border-radius: 5px;
     margin: 10px;
@@ -17,19 +18,32 @@
     flex-grow: 0;
 }
 
-.introduction-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
+.about-picture {
+    align-self: center;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+    margin-right: 5px;
+    margin-bottom: 10px;
 }
 
-.introduction-image {
-    border-radius: 50%;
-    border: 2px solid black;
+.brief-intro {
     align-self: center;
-    object-fit: cover;
-    margin-left: 10px;
-    width: 240px;
-    height: 240px;
+    color: white;
+    flex-basis: 100%;
+}
+
+.brief-intro h2 {
+    text-align: center;
+    margin-top: 5px;
+    color: rgb(59, 130, 246);
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.brief-intro p {
+    font-size: medium;
+    font-style: italic;
 }
