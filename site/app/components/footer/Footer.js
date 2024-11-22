@@ -2,16 +2,16 @@
 
 import { useRouter } from 'next/navigation';
 import "./Footer.css";
-import { House, PersonStanding, FileCode, Contact } from 'lucide-react';
+import { House, PersonStanding, FileCode, Briefcase, Contact } from 'lucide-react';
 
 export default function Footer(){
     const router = useRouter();
 
     const navButtons = [
         { label: 'Home', href: './explore', icon: <House className="nav-icon"/> },
-        { label: 'About Me', href: './about', icon: <PersonStanding className="nav-icon"/> },
         { label: 'Projects', href: './projects', icon: <FileCode className="nav-icon"/> },
-        { label: 'Contact Me', href: './contact', icon: <Contact className="nav-icon"/> },
+        { label: 'Experience', href: './experience', icon: <Briefcase className="nav-icon"/> },
+        { label: 'Contact', href: './contact', icon: <Contact className="nav-icon"/> },
     ];
 
     return (

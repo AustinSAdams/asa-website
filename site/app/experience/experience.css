@@ -1,0 +1,69 @@
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 75px;
+}
+
+.experience-card {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    max-width: 100vw;
+    min-height: 200px;
+    padding: 16px;
+    border: 1px solid #d99f00d9;
+    border-radius: 8px;
+    background-color: #3d3d3d;
+}
+
+.experience-card-header {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: baseline;
+    height: fit-content;
+    width: fit-content;
+    gap: 15px;
+}
+
+.employer-name {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.employer-name:hover {
+    text-decoration: underline;
+}
+
+.position-title {
+    font-style: italic;
+    font-size: 20px;
+    color: aqua;
+}
+
+.position-description {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.experience-card-footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    gap: 15px;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 5px 0;
+}
+
+.job-trait {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 0;
+}
