@@ -46,7 +46,8 @@ export default function Page(){
               <li>REACT</li>
               <li>MySQL</li>
               <li>MariaDB</li>
-              <li>Next.js</li>
+              <li>NextJS</li>
+              <li>NodeJS</li>
               <li>JSON</li>
               <li>GitHub</li>
               <li>Visual Studio Code</li>
