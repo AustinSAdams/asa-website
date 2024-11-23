@@ -1,16 +1,17 @@
 
 .header{
-    background-color: #d99f00d9;
+    background-color: #14213d;
     padding: 15px;
     color: #0a0a0a;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border-color: #0a0a0a;
-    border-width: 2px;
+    border-color: #1e325c;
+    border-width: 1px;
 }
   
 .header-name {
+    color: aqua;
     font-size: 200%;
     font-family: "OCR A Std", monospace;
     text-transform: uppercase;
@@ -31,7 +32,7 @@
 }
   
 .social-icon {
-    color: #0a0a0a;
+    color: #fca311;
     font-size: 24px;
     transition: color 0.3s;
     width: 1.5rem;
@@ -40,10 +41,10 @@
   
 .social-icon:hover {
     border-width: 2px;
-    border-color: #0a0a0a;
+    border-color: #3d63b3;
     padding: 2px;
     border-radius: 35%;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.623);
+    box-shadow: 0px 2px 15px #1e325c;
     width: 2.5rem;
     height: 2.5rem;
 }

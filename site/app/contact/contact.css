@@ -7,15 +7,21 @@
 }
 
 .contact-form {
-    background-color: #3d3d3d;
+    background-color: #14213d;
     padding: 20px;
     border-radius: 5px;
 }
 
 .info-container {
-    background-color: #3d3d3d;
+    background-color: #14213d;
     padding: 20px;
     border-radius: 5px;
+    color: white;
+}
+
+hr {
+    color: #fca311;
+    border: 1px solid #fca311;
 }
 
 .info-container p {
