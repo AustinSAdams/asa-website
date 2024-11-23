@@ -1,6 +1,6 @@
 .footer {
     display: flex;
-    background-color: #d99f00d9;
+    background-color: #d99f00ee;
     flex-grow: 1;
     width: 100%;
     max-width: fit-content;
@@ -35,7 +35,7 @@
 }
 
 .nav-button:hover {
-    color: rgb(119, 0, 0);
+    color: #203562;
 }
 
 .nav-icon {

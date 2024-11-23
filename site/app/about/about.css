@@ -1,8 +1,6 @@
 .page-container {
     display: flex;
     flex-direction: column;
-    background-color: #000000;
-    color: white;
     margin-bottom: 60px;
 }
 
@@ -10,7 +8,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #2b2b2b;
+    background-color: #14213d;
     padding: 15px 20px;
     border-radius: 5px;
     margin: 10px;
@@ -37,7 +35,7 @@
 .brief-intro h2 {
     text-align: center;
     margin-top: 5px;
-    color: rgb(59, 130, 246);
+    color: #3d7eff;
     font-size: large;
     font-weight: bold;
     text-decoration: underline;

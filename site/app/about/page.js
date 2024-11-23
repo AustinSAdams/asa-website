@@ -23,7 +23,7 @@ export default function Page(){
 
           <div className="p-4">
             <h1 className="text-lg font-bold mb-2 text-blue-500">Programming Languages</h1>
-            <ul className="list-disc pl-5">
+            <ul className="list-disc pl-5 text-white">
               <li>Python</li>
               <li>Java</li>
               <li>JavaScript</li>
@@ -39,7 +39,7 @@ export default function Page(){
 
           <div className="p-4">
             <h1 className="text-lg font-bold mb-2 text-blue-500">Tools & Frameworks</h1>
-            <ul className="list-disc pl-5">
+            <ul className="list-disc pl-5 text-white">
               <li>Tailwind CSS</li>
               <li>Firebase</li>
               <li>AWS</li>
@@ -57,7 +57,7 @@ export default function Page(){
 
           <div className="p-4">
             <h1 className="text-lg font-bold mb-2 text-blue-500">Technical & Developing Skillsets</h1>
-            <ul className="list-disc pl-5">
+            <ul className="list-disc pl-5 text-white">
               <li>SaaS application development</li>
               <li>Cybersecurity projects</li>
               <li>Networking projects</li>
@@ -70,7 +70,7 @@ export default function Page(){
 
           <div className="p-4">
             <h1 className="text-lg font-bold mb-2 text-blue-500">Specialized Knowledge</h1>
-            <ul className="list-disc pl-5">
+            <ul className="list-disc pl-5 text-white">
               <li>Software Engineering</li>
               <li>Programming & Development</li>
               <li>Cybersecurity & Networking</li>
