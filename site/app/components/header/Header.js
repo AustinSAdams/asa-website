@@ -28,7 +28,6 @@ export default function Header(){
                     ))}
                 </div>      
             </div>
-            <div className="header-spacer"/>
         </>
     );
 }
