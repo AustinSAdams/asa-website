@@ -13,19 +13,22 @@ export default function Header(){
     ];
 
     return (
-        <div className="header">
-            <button
-                className='header-name'
-                onClick={()=>{router.push('/')}}
-            >Austin Adams</button>
-            <div className="social-container">
-                {socials.map((item, index) => (
-                    <button
-                        key={index}
-                        onClick={()=>{router.push(item.href)}}
-                    >{item.icon}</button>
-                ))}
-            </div>      
-        </div>
+        <>
+            <div className="header">
+                <button
+                    className='header-name'
+                    onClick={()=>{router.push('/')}}
+                >Austin Adams</button>
+                <div className="social-container">
+                    {socials.map((item, index) => (
+                        <button
+                            key={index}
+                            onClick={()=>{router.push(item.href)}}
+                        >{item.icon}</button>
+                    ))}
+                </div>      
+            </div>
+            <div className="header-spacer"/>
+        </>
     );
 }

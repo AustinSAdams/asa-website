@@ -6,13 +6,12 @@ import Footer from '../footer/Footer';
 export default function LayoutWrapper({ children }) {
   const pathname = usePathname();
   const isHomePage = (pathname === '/');
-  const isExplorePage = (pathname === '/explore');
 
   return (
     <>
-      {!isHomePage && <Header />}
+      {<Header />}
       {children}
-      {(!isHomePage && !isExplorePage) && <Footer />}
+      {(!isHomePage) && <Footer />}
     </>
   );
 }

@@ -1,5 +1,4 @@
-
-.header{
+.header {
     background-color: #14213d;
     padding: 15px;
     color: #0a0a0a;
@@ -8,6 +7,16 @@
     justify-content: space-evenly;
     border-color: #1e325c;
     border-width: 1px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-spacer {
+    height: 90px;
 }
   
 .header-name {

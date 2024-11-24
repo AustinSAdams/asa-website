@@ -8,7 +8,7 @@ export default function Footer(){
     const router = useRouter();
 
     const navButtons = [
-        { label: 'Home', href: './explore', icon: <House className="nav-icon"/> },
+        { label: 'Home', href: './', icon: <House className="nav-icon"/> },
         { label: 'Projects', href: './projects', icon: <FileCode className="nav-icon"/> },
         { label: 'Experience', href: './experience', icon: <Briefcase className="nav-icon"/> },
         { label: 'Contact', href: './contact', icon: <Contact className="nav-icon"/> },

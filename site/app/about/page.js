@@ -22,60 +22,61 @@ export default function Page(){
         <div className="content-container grid grid-cols-4 gap-4 p-4 justify-center">
 
           <div className="p-4">
-            <h1 className="text-lg font-bold mb-2 text-blue-500">Programming Languages</h1>
-            <ul className="list-disc pl-5 text-white">
+            <h1 className="skills-heading">Programming Languages</h1>
+            <ul className="skills-list">
               <li>Python</li>
               <li>Java</li>
               <li>JavaScript</li>
-              <li>Markdown</li>
               <li>TypeScript</li>
-              <li>CSS</li>
-              <li>HTML</li>
               <li>SQL</li>
+              <li>Assembly</li>
+              <li>Bash</li>
               <li>C++</li>
               <li>C#</li>
             </ul>
           </div>
 
           <div className="p-4">
-            <h1 className="text-lg font-bold mb-2 text-blue-500">Tools & Frameworks</h1>
-            <ul className="list-disc pl-5 text-white">
+            <h1 className="skills-heading">Tools & Frameworks</h1>
+            <ul className="skills-list">
               <li>Tailwind CSS</li>
               <li>Firebase</li>
               <li>AWS</li>
               <li>REACT</li>
-              <li>MySQL</li>
-              <li>MariaDB</li>
-              <li>NextJS</li>
-              <li>NodeJS</li>
-              <li>JSON</li>
+              <li>Markdown</li>
+              <li>CSS</li>
+              <li>HTML</li>
+              <li>Docker</li>
+              <li>Next.js</li>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>Figma</li>
               <li>GitHub</li>
-              <li>Visual Studio Code</li>
-              <li>Visual Studio</li>
             </ul>
           </div>
 
           <div className="p-4">
-            <h1 className="text-lg font-bold mb-2 text-blue-500">Technical & Developing Skillsets</h1>
-            <ul className="list-disc pl-5 text-white">
+            <h1 className="skills-heading">Technical & Developing Skillsets</h1>
+            <ul className="skills-list">
               <li>SaaS application development</li>
               <li>Cybersecurity projects</li>
+              <li>API Development & IntegrationC</li>
               <li>Networking projects</li>
-              <li>Relational database design and management</li>
+              <li>Database Design & Management (MySQL, MariaDB)</li>
               <li>Technical/Professional documentation</li>
               <li>Penetration testing</li>
-              <li>Frontend styling (CSS integrated with Tailwind)</li>
+              <li>Collaboration with Git and Github</li>
             </ul>
           </div>
 
           <div className="p-4">
-            <h1 className="text-lg font-bold mb-2 text-blue-500">Specialized Knowledge</h1>
-            <ul className="list-disc pl-5 text-white">
+            <h1 className="skills-heading">Specialized Knowledge</h1>
+            <ul className="skills-list">
               <li>Software Engineering</li>
               <li>Programming & Development</li>
-              <li>Cybersecurity & Networking</li>
+              <li>Cloud Computing</li>
+              <li>DevOps</li>
               <li>Project Management</li>
-              <li>"People" Skills & Communication</li>
             </ul>
           </div>
 

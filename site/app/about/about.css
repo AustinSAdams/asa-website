@@ -8,7 +8,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #14213d;
+    border: 1px solid #005dc7;
+    background-color: #172647;
     padding: 15px 20px;
     border-radius: 5px;
     margin: 10px;
@@ -24,6 +25,7 @@
     height: 350px;
     margin-right: 5px;
     margin-bottom: 10px;
+    border: 1px solid #fca311;
 }
 
 .brief-intro {
@@ -35,7 +37,7 @@
 .brief-intro h2 {
     text-align: center;
     margin-top: 5px;
-    color: #3d7eff;
+    color: aqua;
     font-size: large;
     font-weight: bold;
     text-decoration: underline;
@@ -44,4 +46,17 @@
 .brief-intro p {
     font-size: medium;
     font-style: italic;
+}
+
+.skills-heading {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: aqua;
+}
+
+.skills-list {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+    color: #ffffff;
 }
