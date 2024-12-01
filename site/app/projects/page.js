@@ -1,3 +1,4 @@
+import './projects.css';
 
 export default function Page(){
     return (
