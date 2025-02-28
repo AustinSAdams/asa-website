@@ -1,5 +1,4 @@
-# asa-website
-# Portfolio Website
+# Austin Adams' Portfolio Website
 
 Welcome to my portfolio website repository! This website showcases my skills, experience, and projects in software development. It is currently under development, with the projects and contact pages still in progress.
 
