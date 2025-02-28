@@ -1,6 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { Button } from "./ui/button";
+import CMToast from "./ComingSoonToast";
 import { Instagram, Menu, Github, Linkedin } from "lucide-react";
 import {
     DropdownMenu,
@@ -14,6 +15,7 @@ import {
     DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import { useTheme } from "next-themes";
+import { Separator } from "./ui/separator";
 
 export default function Sidebar() {
     const router = useRouter();
@@ -32,72 +34,70 @@ export default function Sidebar() {
     ];
 
     return (
-        <span className="flex flex-row flex-nowrap border-b-2 p-2 justify-between">
-            <div className="flex flex-row gap-1 flex-nowrap items-center">
-                <Button
-                    onClick={() => router.push("/")}
-                    variant="ghost"
-                    className="text-3xl font-bold hover:underline"
-                >
-                    Austin Adams
-                </Button>
-                {socials.map((social, index) => (
+        <>
+            <div className="flex flex-row flex-nowrap p-2 border-b-[1px] justify-between">
+                <div className="flex flex-row gap-1 flex-nowrap items-center">
                     <Button
-                        className="w-10 h-10 rounded-full flex items-center justify-center"
-                        onClick={() => router.push(social.link)}
-                        key={index}
+                        onClick={() => router.push("/")}
+                        variant="ghost"
+                        className="text-3xl font-bold hover:underline"
                     >
-                        {social.icon}
+                        Austin Adams
                     </Button>
-                ))}
+                    {socials.map((social, index) => (
+                        <Button
+                            className="w-10 h-10 rounded-full flex items-center justify-center"
+                            onClick={() => router.push(social.link)}
+                            key={index}
+                        >
+                            {social.icon}
+                        </Button>
+                    ))}
+                </div>
+                <div className="flex flex-row gap-1 flex-nowrap items-center">
+                    <DropdownMenu>
+                        <DropdownMenuTrigger>
+                            <Menu />
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent>
+                            <DropdownMenuItem onClick={() => router.push("/")}>
+                                Home
+                            </DropdownMenuItem>
+                            <DropdownMenuItem
+                                onClick={() => router.push("/experience")}
+                            >
+                                Experience
+                            </DropdownMenuItem>
+                            <DropdownMenuItem onClick={() => CMToast()}>
+                                Projects
+                            </DropdownMenuItem>
+                            <DropdownMenuItem onClick={() => CMToast()}>
+                                Contact
+                            </DropdownMenuItem>
+                            <DropdownMenuSeparator />
+                            <DropdownMenuSub>
+                                <DropdownMenuSubTrigger>
+                                    Appearance
+                                </DropdownMenuSubTrigger>
+                                <DropdownMenuPortal>
+                                    <DropdownMenuSubContent>
+                                        <DropdownMenuItem
+                                            onClick={() => setTheme("light")}
+                                        >
+                                            Light
+                                        </DropdownMenuItem>
+                                        <DropdownMenuItem
+                                            onClick={() => setTheme("dark")}
+                                        >
+                                            Dark
+                                        </DropdownMenuItem>
+                                    </DropdownMenuSubContent>
+                                </DropdownMenuPortal>
+                            </DropdownMenuSub>
+                        </DropdownMenuContent>
+                    </DropdownMenu>
+                </div>
             </div>
-            <div className="flex flex-row gap-1 flex-nowrap items-center">
-                <DropdownMenu>
-                    <DropdownMenuTrigger>
-                        <Menu />
-                    </DropdownMenuTrigger>
-                    <DropdownMenuContent>
-                        <DropdownMenuItem onClick={() => router.push("/")}>
-                            Home
-                        </DropdownMenuItem>
-                        <DropdownMenuItem
-                            onClick={() => router.push("/experience")}
-                        >
-                            Experience
-                        </DropdownMenuItem>
-                        <DropdownMenuItem
-                            onClick={() => router.push("/projects")}
-                        >
-                            Projects
-                        </DropdownMenuItem>
-                        <DropdownMenuItem
-                            onClick={() => router.push("/contact")}
-                        >
-                            Contact
-                        </DropdownMenuItem>
-                        <DropdownMenuSeparator />
-                        <DropdownMenuSub>
-                            <DropdownMenuSubTrigger>
-                                Appearance
-                            </DropdownMenuSubTrigger>
-                            <DropdownMenuPortal>
-                                <DropdownMenuSubContent>
-                                    <DropdownMenuItem
-                                        onClick={() => setTheme("light")}
-                                    >
-                                        Light
-                                    </DropdownMenuItem>
-                                    <DropdownMenuItem
-                                        onClick={() => setTheme("dark")}
-                                    >
-                                        Dark
-                                    </DropdownMenuItem>
-                                </DropdownMenuSubContent>
-                            </DropdownMenuPortal>
-                        </DropdownMenuSub>
-                    </DropdownMenuContent>
-                </DropdownMenu>
-            </div>
-        </span>
+        </>
     );
 }

@@ -1,4 +1,5 @@
 import HeaderMenu from "../components/HeaderMenu";
+import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
                     >
                         <HeaderMenu />
                         {children}
+                        <Toaster />
                     </ThemeProvider>
                 </body>
             </html>
