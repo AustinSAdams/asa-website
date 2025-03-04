@@ -12,26 +12,10 @@ import {
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
+import CMToast from "@/components/ComingSoonToast";
 
 export default function Home() {
     const router = useRouter();
-
-    const cardList = [
-        {
-            name: "Projects",
-            icon: <FileCode />,
-            href: "/projects",
-            description:
-                "Here, you can view some details about projects I've worked on, including their name, description, and code!",
-        },
-        {
-            name: "Experience",
-            icon: <Briefcase />,
-            href: "/experience",
-            description:
-                "Learn more about the companies I've worked with, what I did at the company, and tools I used!",
-        },
-    ];
 
     return (
         <div className="flex flex-col w-full">
@@ -47,15 +31,18 @@ export default function Home() {
                             About Me
                         </CardTitle>
                         <CardDescription>
-                            Hi, I'm Austin! I focus on cybersecurity, digital
-                            forensics, and web development. I'm currently
-                            pursuing a Bachelors of Science in Computer Science
-                            at Louisiana Tech University, where I'm building my
-                            skills in these areas.
-                            <br /> I enjoy solving complex problems and working
-                            on cool projects. Outside of work, I dabble with new
-                            technologies, work on personal projects, and listen
-                            to the Cyberwire podcast!
+                            <p>
+                                Hi, I am Austin! I focus on cybersecurity,
+                                digital forensics, and web development.
+                                Currently, I am pursuing a Bachelors of Science
+                                in Computer Science at Louisiana Tech
+                                University, where I am building my skills in
+                                these areas.
+                                <br /> I enjoy solving complex problems and
+                                working on cool projects. Outside of work, I
+                                dabble with new technologies, work on personal
+                                projects, and listen to the Cyberwire podcast!
+                            </p>
                         </CardDescription>
                     </CardHeader>
                     <CardContent className="flex flex-col justify-center">
@@ -67,35 +54,52 @@ export default function Home() {
                             className="self-center object-cover rounded-full w-56 h-56 border-[1px] my-2"
                         />
                         <Separator className="my-3" />
-                        <div className="grid grid-cols-2 justify-items-center">
-                            {cardList.map((card, index) => (
-                                <div
-                                    key={index}
-                                    className="flex flex-col items-center text-center"
-                                >
-                                    <p className="mb-1">{card.description}</p>
-                                    <Card className="flex flex-col w-64 mt-auto">
-                                        <CardHeader>
-                                            <CardTitle className="flex justify-center items-center gap-3">
-                                                {card.name}
-                                                {card.icon}
-                                            </CardTitle>
-                                        </CardHeader>
-                                        <CardContent className="flex justify-center mt-auto">
-                                            <Button
-                                                onClick={() =>
-                                                    router.push(card.href)
-                                                }
-                                            >
-                                                Learn More
-                                            </Button>
-                                        </CardContent>
-                                    </Card>
-                                </div>
-                            ))}
+                        <div className="grid grid-cols-1 sm:grid-cols-2  gap-2 justify-items-center">
+                            <div className="flex flex-col items-center text-center">
+                                <p className="mb-1">
+                                    Here, you can view some details about
+                                    projects I have worked on, including their
+                                    name, description, and code!
+                                </p>
+                                <Card className="flex flex-col w-64 mt-auto">
+                                    <CardHeader>
+                                        <CardTitle className="flex justify-center items-center gap-3">
+                                            Projects <FileCode />
+                                        </CardTitle>
+                                    </CardHeader>
+                                    <CardContent className="flex justify-center mt-auto">
+                                        <Button onClick={() => CMToast()}>
+                                            Learn More
+                                        </Button>
+                                    </CardContent>
+                                </Card>
+                            </div>
+                            <div className="flex flex-col items-center text-center">
+                                <p className="mb-1">
+                                    Learn more about the companies I have worked
+                                    with, what I did at the company, and tools I
+                                    used!
+                                </p>
+                                <Card className="flex flex-col w-64 mt-auto">
+                                    <CardHeader>
+                                        <CardTitle className="flex justify-center items-center gap-3">
+                                            Experience <Briefcase />
+                                        </CardTitle>
+                                    </CardHeader>
+                                    <CardContent className="flex justify-center mt-auto">
+                                        <Button
+                                            onClick={() =>
+                                                router.push("/experience")
+                                            }
+                                        >
+                                            Learn More
+                                        </Button>
+                                    </CardContent>
+                                </Card>
+                            </div>
                         </div>
                         <Separator className="my-4" />
-                        <div className="grid grid-cols-4 gap-6 px-4 text-white">
+                        <div className="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-6 px-4 text-white">
                             {[
                                 {
                                     title: "Programming Languages",
@@ -111,6 +115,7 @@ export default function Home() {
                                         "C#",
                                         "Prolog",
                                         "Go",
+                                        "ML",
                                     ],
                                 },
                                 {
