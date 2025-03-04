@@ -1,16 +1,16 @@
 import { NextResponse } from "next/server";
 
-const inDevelopmentRoutes = ["/contact", "/projects/QuietMap"];
+const inDevelopmentRoutes = ["/contact", "/projects", "/projects/QuietMap"];
 
 // This function can be marked `async` if using `await` inside
 export function middleware(request) {
-  if (inDevelopmentRoutes.includes(request.nextUrl.pathname)) {
-    return NextResponse.redirect(new URL("/", request.url));
-  }
-  return NextResponse.next();
+    if (inDevelopmentRoutes.includes(request.nextUrl.pathname)) {
+        return NextResponse.redirect(new URL("/", request.url));
+    }
+    return NextResponse.next();
 }
 
 // See "Matching Paths" below to learn more
 export const config = {
-  matcher: inDevelopmentRoutes,
+    matcher: inDevelopmentRoutes,
 };
