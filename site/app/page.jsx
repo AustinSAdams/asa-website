@@ -12,7 +12,6 @@ import {
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
-import CMToast from "@/components/ComingSoonToast";
 
 export default function Home() {
   const router = useRouter();
@@ -63,7 +62,9 @@ export default function Home() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="flex justify-center mt-auto">
-                    <Button onClick={() => CMToast()}>Learn More</Button>
+                    <Button onClick={() => router.push("/projects")}>
+                      Learn More
+                    </Button>
                   </CardContent>
                 </Card>
               </div>
