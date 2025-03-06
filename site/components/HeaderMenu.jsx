@@ -1,8 +1,21 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { Button } from "./ui/button";
-import CMToast from "./ComingSoonToast";
-import { Instagram, Menu, Github, Linkedin } from "lucide-react";
+import CSToast from "./ComingSoonToast";
+import {
+  Instagram,
+  Menu,
+  Github,
+  Linkedin,
+  Hash,
+  House,
+  Briefcase,
+  FileCode,
+  Phone,
+  SunMoon,
+  Sun,
+  Moon,
+} from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -15,7 +28,6 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import { useTheme } from "next-themes";
-import { Separator } from "./ui/separator";
 
 export default function Navbar() {
   const router = useRouter();
@@ -70,6 +82,7 @@ export default function Navbar() {
             <DropdownMenuContent>
               <DropdownMenuSub>
                 <DropdownMenuSubTrigger className="sm:hidden">
+                  <Hash />
                   Socials
                 </DropdownMenuSubTrigger>
                 <DropdownMenuPortal>
@@ -88,27 +101,31 @@ export default function Navbar() {
               </DropdownMenuSub>
               <DropdownMenuSeparator className="sm:hidden" />
               <DropdownMenuItem onClick={() => router.push("/")}>
-                Home
+                <House /> Home
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => router.push("/experience")}>
-                Experience
+                <Briefcase /> Experience
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => CMToast()}>
+              <DropdownMenuItem onClick={() => router.push("/projects")}>
+                <FileCode />
                 Projects
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => CMToast()}>
+              <DropdownMenuItem onClick={() => CSToast()}>
+                <Phone />
                 Contact
               </DropdownMenuItem>
               <DropdownMenuSeparator />
               <DropdownMenuSub>
-                <DropdownMenuSubTrigger>Appearance</DropdownMenuSubTrigger>
+                <DropdownMenuSubTrigger>
+                  <SunMoon /> Appearance
+                </DropdownMenuSubTrigger>
                 <DropdownMenuPortal>
                   <DropdownMenuSubContent>
                     <DropdownMenuItem onClick={() => setTheme("light")}>
-                      Light
+                      <Sun /> Light
                     </DropdownMenuItem>
                     <DropdownMenuItem onClick={() => setTheme("dark")}>
-                      Dark
+                      <Moon /> Dark
                     </DropdownMenuItem>
                   </DropdownMenuSubContent>
                 </DropdownMenuPortal>
