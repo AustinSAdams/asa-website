@@ -7,7 +7,7 @@ Welcome to my portfolio website repository! This website showcases my skills, ex
 - **Home**: Introduction and overview of my skills and experience.
 - **Experience**: A detailed look at my professional journey, including past roles and accomplishments.
 - **Projects**: A showcase of the software and tools I have developed.
-- **Contact** (Under Development): A page for reaching out to me.
+- **Contact**: A page for reaching out to me.
 
 ## Technologies Used
 
