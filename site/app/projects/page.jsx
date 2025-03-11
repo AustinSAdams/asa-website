@@ -9,6 +9,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Separator } from "@radix-ui/react-separator";
 import Image from "next/image";
+import { Github } from "lucide-react";
 
 export default function Projects() {
   const router = useRouter();
@@ -20,7 +21,7 @@ export default function Projects() {
       description:
         "Tool for automated reconaissance on a website. Uses NMap, Shodan, Wireshark, and other softwares for data collection.",
       tags: "Cybersecurity, Software Design",
-      href: "/projects/QuietMap",
+      href: "https://github.com/AustinSAdams/QuietMap",
     },
   ];
   return (
@@ -77,7 +78,7 @@ export default function Projects() {
                     className="mt-5"
                     onClick={() => router.push(project.href)}
                   >
-                    Learn More
+                    <Github />
                   </Button>
                 </p>
               </AccordionContent>

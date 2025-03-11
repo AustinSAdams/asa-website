@@ -1,7 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { Button } from "./ui/button";
-import CSToast from "./ComingSoonToast";
 import {
   Instagram,
   Menu,
@@ -110,7 +109,7 @@ export default function Navbar() {
                 <FileCode />
                 Projects
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => CSToast()}>
+              <DropdownMenuItem onClick={() => router.push("/contact")}>
                 <Phone />
                 Contact
               </DropdownMenuItem>
