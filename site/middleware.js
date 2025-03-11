@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-const inDevelopmentRoutes = ["/contact", "/projects/QuietMap"];
+const inDevelopmentRoutes = [];
 
 // This function can be marked `async` if using `await` inside
 export function middleware(request) {
