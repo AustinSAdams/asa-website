@@ -62,7 +62,7 @@ export default function Projects() {
                                         height={150}
                                         className="self-center object-cover rounded-md w-56 h-56 my-2"
                                     />
-                                    <div className="flex flex-col m-2">
+                                    <div className="flex flex-col w-full m-2">
                                         <p className="text-lg font-bold">
                                             {project.name}
                                         </p>
@@ -79,7 +79,7 @@ export default function Projects() {
                                 </span>
                             </AccordionTrigger>
                             <AccordionContent>
-                                <p>
+                                <>
                                     <p>
                                         <strong>Description: </strong>
                                         {project.description}
@@ -97,7 +97,7 @@ export default function Projects() {
                                     >
                                         <Github />
                                     </Button>
-                                </p>
+                                </>
                             </AccordionContent>
                         </AccordionItem>
                     ))}
